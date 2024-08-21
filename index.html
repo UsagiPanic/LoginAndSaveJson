@@ -9,15 +9,15 @@
     <form action="save.php" method="post" style="display: flex;justify-content: center;align-content: center;height: 100vh;flex-wrap: wrap;">
         <div class="container" style="display: flex; flex-direction: column; width: 10vw;">
             <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <input type="email" placeholder="Enter Username" name="uname" required>
             
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" pattern=".{8,}" placeholder="Enter Password" name="psw" required>
+            
+            <label style="display: none;" for="psw"><b>Must be 8 characters</b></label>
             
             <button type="submit">Login</button>
         </div>
     </form> 
-
-    <script src="save.js"></script>
 </body>
 </html>
